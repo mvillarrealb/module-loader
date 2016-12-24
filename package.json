@@ -1,0 +1,30 @@
+{
+  "name": "module-loader",
+  "version": "0.0.1",
+  "author": "Marco Villarreal",
+  "license": "MIT",
+  "homepage": "https://github.com/mvillarrealb/module-loader",
+  "repository": "git://github.com/mvillarrealb/module-loader",
+  "description": "Light module loader based on nodejs fs, uses async and sync mode",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha -R spec -b test/tests.js"
+  },
+  "keywords": [
+    "module loader",
+    "dynamic require",
+    "async load",
+    "sync load",
+    "fs"
+  ],
+  "engines": {
+    "node": ">= 6.4.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
