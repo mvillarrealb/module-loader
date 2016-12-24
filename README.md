@@ -1,4 +1,4 @@
-module-loader
+mod-loader
 ==============
 
 Lite synchronous and asynchronous module loader to make a dynamic use of
@@ -8,18 +8,18 @@ Lite synchronous and asynchronous module loader to make a dynamic use of
 
 ```shell
 
-  npm install module-loader --save
+  npm install mod-loader --save
 
 ```
 
 ## General
 
-module-loader is a node module that can be used to easyly include your own
+mod-loader is a node module that can be used to easyly include your own
 code digging directories using native node fs module.
 
 ## Usage
 
-module-loader has to basic methods
+mod-loader has to basic methods
 
 __loadModulesSync: ({
   baseDirectory = null,
@@ -77,7 +77,7 @@ ORM models into a single db property, the example is as follows:
 "use strict"
 
 module.exports = function() {
-  const moduleLoader = require("module-loader");
+  const moduleLoader = require("mod-loader");
   const Sequelize = require("sequelize");
   const sequelize = new Sequelize(...);
 
@@ -117,7 +117,7 @@ When developing express's applications is almost an imperative requirement to de
 
 ```javascript
 
-const moduleLoader = require("module-loader");
+const moduleLoader = require("mod-loader");
 const path = require("path");
 
 let middleware = {};
@@ -145,7 +145,7 @@ console.log(middleware);//this object will hold all your middleware
 ### Everything wich requires to collect a group of modules into a "holder"
 
 If you found yourself in the need to use an object which collects modules from
-a directory, then module-loader may be suitable for your needs, it does not require any additional node modules and uses native node's fs module
+a directory, then mod-loader may be suitable for your needs, it does not require any additional node modules and uses native node's fs module
 
 ## Tests
 
